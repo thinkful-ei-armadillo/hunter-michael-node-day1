@@ -16,16 +16,6 @@ app.get('/sum', (req, res) => {
             .status(400)
             .send('missing `b`');
     }
-    if(typeof a !== 'number'){
-        return res
-            .status(400)
-            .send('`a` must be a number');
-    }
-    if(typeof b !== 'number'){
-        return res
-            .status(400)
-            .send('`b` must be a number');
-    }
 
     const numA = parseFloat(a);
     const numB = parseFloat(b);
